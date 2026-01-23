@@ -1,0 +1,1 @@
+import {Product} from './Product.js' //this is how to import into other files :) 
