@@ -1,3 +1,7 @@
+//So are we making something like an Etsy or an Amazon?
+
+// This is the basic function that allows products to be made and for taxes to be calculated?
+
 // Properties: sku (string), name (string), price (number).
 // Methods:
 // displayDetails() - a method that returns a formatted string with the product’s details.
@@ -15,13 +19,13 @@ export class Product { // lesson 3
   price: number;
 
 constructor(sku: string, name: string, price: number,) {
-this.sku = sku;
-this.name = name;
-this.price = price;
+  this.sku = sku;
+  this.name = name;
+  this.price = price;
 }
 
 displayDetails(): string {
-return `${this.name} costs $${this.price}}.`;
+return `${this.name} costs $${this.price}.`;
 }
 
 // get price(): number { // this line contains the method
@@ -32,13 +36,14 @@ return `${this.name} costs $${this.price}}.`;
 
 getPriceWithTax(): number { // this will grab price with static tax from parent class
   return this.price * (Product.taxRate + 1);
-} //10% tax
-
-set setPrice(newBasePrice: number) {
-  this.price = newBasePrice;
+ //10% tax
 }
+}
+// set setPrice(newBasePrice: number) {
+//   this.price = newBasePrice;
+// }
 
-const product1 = new Product("");
-console.log(product1.displayDetails());
+// const product1 = new Product("");
+// console.log(product1.displayDetails());
 
-getPriceWithTax()
+// getPriceWithTax()
