@@ -25,8 +25,7 @@ export class DigitalProduct extends Product {
   }
     // Override the getPriceWithTax() method to calculate a final price with no tax
   getPriceWithTax(): number { 
-    return this.price * 0;
-    //10% tax
+    return this.price * 0; // should this be times 1 instead of 0?
   }
 
     // getter function for megabytes
