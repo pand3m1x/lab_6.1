@@ -23,9 +23,8 @@ export class digitalProduct extends Product {
     super(sku, name, price);
     this.fileSize = fileSize;
   }
-  // do I include the display?
+  // Override the getPriceWithTax() method to calculate a final price with no tax
 
-  // add override no tax
 
   // getter function for megabytes
 }
