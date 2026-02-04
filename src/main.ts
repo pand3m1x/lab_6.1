@@ -1,7 +1,7 @@
 import {PhysicalProduct} from './models/PhysicalProduct.js'
 import {DigitalProduct} from './models/DigitalProduct.js'
 import {Product} from './models/Product.js'
-import {taxCalculator} from './utils/taxCalculator.js'
+import {calculateTax} from './utils/taxCalculator.js'
 
 
 //Use a loop to display the details of each product, calculate prices with tax, and display the final prices.
@@ -14,4 +14,5 @@ const myProducts: Product [] = [
 
 for (const product of myProducts) {
   console.log(product.displayDetails())
+  console.log(calculateTax(product))
 }
