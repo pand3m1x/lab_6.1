@@ -28,7 +28,9 @@ export class DigitalProduct extends Product {
     return this.price * 0, `there is no tax for digital products`;
   //10% tax
   }
-
-
   // getter function for megabytes
+  get formattedWeight(): string { 
+      return `${this.weight} kg`;
+    }
+
 }
