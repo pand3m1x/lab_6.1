@@ -1,6 +1,6 @@
 // These are items that are digital, like soundtracks, voice clips, (would it also include digital artwork?)
 
-import {Product} from './Product' 
+import {Product} from './Product.js' 
 
 // Similiar to Physical Products, we will make a digital version?
 
@@ -15,7 +15,7 @@ import {Product} from './Product'
 //   }
 // }
 
-export class digitalProduct extends Product {
+export class DigitalProduct extends Product {
   fileSize: number;
 
   constructor(sku: string, name: string, price: number, fileSize: number,){
@@ -24,6 +24,10 @@ export class digitalProduct extends Product {
     this.fileSize = fileSize;
   }
   // Override the getPriceWithTax() method to calculate a final price with no tax
+  getPriceWithTax(): number { 
+    return this.price * 0, `there is no tax for digital products`;
+  //10% tax
+  }
 
 
   // getter function for megabytes

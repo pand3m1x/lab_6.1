@@ -24,9 +24,9 @@ constructor(sku: string, name: string, price: number,) {
   this.price = price;
 }
 
-displayDetails(): string {
-return `${this.name} costs $${this.price}.`;
-}
+  displayDetails(): string {
+  return `${this.name} costs $${this.price}.`;
+  }
 
 // get price(): number { // this line contains the method
 //   return this.price * (Product.taxRate + 1); // this is what it does
@@ -34,10 +34,10 @@ return `${this.name} costs $${this.price}.`;
 // set price(newBasePrice: number) {
 //   this.price = newBasePrice;
 
-getPriceWithTax(): number { // this will grab price with static tax from parent class
-  return this.price * (Product.taxRate + 1);
- //10% tax
-}
+  getPriceWithTax(): number { 
+    return this.price * (Product.taxRate + 1);
+  //10% tax
+  }
 }
 // set setPrice(newBasePrice: number) {
 //   this.price = newBasePrice;
