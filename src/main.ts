@@ -16,3 +16,5 @@ for (const product of myProducts) {
   console.log(product.displayDetails())
   console.log(calculateTax(product))
 }
+
+//Something isn't adding the file size and weight?
